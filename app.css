@@ -1,0 +1,11 @@
+.ph-grid { display: grid; grid-template-columns: minmax(0, 360px) minmax(0, 1fr); gap: 14px; align-items: start; }
+@media (max-width: 860px) { .ph-grid { grid-template-columns: minmax(0, 1fr); } }
+.ph-dims { align-items: end; flex-wrap: nowrap; }
+.ph-swap { flex: none; margin-bottom: 2px; }
+.ph-color { flex-wrap: nowrap; gap: 6px; }
+.ph-color .input { min-width: 0; }
+.ph-stage { display: grid; place-items: center; min-height: 340px; padding: 18px; border-radius: 14px; border: 1px solid var(--line); overflow: hidden; }
+.ph-stage canvas { display: block; max-width: 100%; max-height: 560px; width: auto; height: auto; border-radius: 4px; box-shadow: 0 10px 40px -16px rgba(0,0,0,.6); }
+div.field { display: grid; gap: 6px; font-size: 12.5px; font-weight: 600; color: var(--text-2); }
+.field .faint { font-weight: 500; }
+.field > .seg { justify-self: start; }
